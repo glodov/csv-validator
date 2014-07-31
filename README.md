@@ -32,7 +32,6 @@ So you no need to upload CSV file in your website every time after small mistake
 				return $result;
 			}
 			return true;
-			//return is_numeric($row[0]) && is_numeric($row[1]) && (is_numeric($row[2]) || '' === $row[2]);
 		}
 		else if (count($row) > 7 && '0' === $row[0])
 		{
@@ -74,3 +73,5 @@ So you no need to upload CSV file in your website every time after small mistake
 		return true;
 	}
 	
+In this CSV file we have product and product group lines.
+In product group we have only 4 columns and first one equals `1`, first and second columns must be numbers, third column is number but can be empty also. The fourth column can have any text or symbols.
