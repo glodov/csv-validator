@@ -10,8 +10,11 @@ So you no need to upload CSV file in your website every time after small mistake
 ## How to use
 
 Addapt `function fit()` to your CSV format.
+
 Upload file csv-validator.php to your server and access it from browser `http://<your-website>/csv-validator.php`.
+
 Set correct configuration for encoding, delimeters, etc.
+
 Upload file.
 
 ## Documentation
