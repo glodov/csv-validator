@@ -20,16 +20,22 @@ Upload file.
 
 Where `$row` is array of cells in current parsing line.
 
-`$result` of method must be `TRUE` or `array` of cell(column) numbers where is error detected.
+The function returns `$result` which must be `TRUE` or `array` of cell(column) numbers where is error detected.
 
 ## Configuration
 
 `isHeader` - 0 | 1. If enabled then first row from CSV file is header, otherwise there is no header.
+
 `ignoreEmpty` - 0 | 1. If enabled then empty rows will be ignored, otherwise will be marked as errors.
+
 `encoding` - File encoding.
+
 `length` - Maximum length of line in Bytes.
+
 `delimeter` - Field delimeter.
+
 `enclosure` - Enclosure character.
+
 `escape` - Escape character.
 
 ## Example
