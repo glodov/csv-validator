@@ -102,7 +102,7 @@ The function returns `$result` which must be `TRUE` or `array` of cell(column) n
 			return $result;
 		}
 
-		// just for fun, we cannot be here never
+		// just for fun, we can never be here if all IF-ELSE are correct above.
 		return true;
 	}
 	
