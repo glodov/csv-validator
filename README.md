@@ -10,7 +10,7 @@ So you no need to upload CSV file in your website every time after small mistake
 
 ## Example
 
-function fit(array $row)
+	function fit(array $row)
 	{
 		$result = array();
 		if (count($row) === 4 && '1' === $row[0])
