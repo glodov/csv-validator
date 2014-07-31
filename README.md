@@ -7,6 +7,30 @@ It takes so much time to find error in CSV file when you import data such price-
 This simple script helps you to localize errors in CSV file. So you just save your time.
 So you no need to upload CSV file in your website every time after small mistake fixed. You just write rules in function fit() and upload this script on test server and programmer who makes export to CSV can find his mistakes himself by using this CSV validator.
 
+## How to use
+
+Addapt `function fit()` to your CSV format.
+Upload file csv-validator.php to your server and access it from browser `http://<your-website>/csv-validator.php`.
+Set correct configuration for encoding, delimeters, etc.
+Upload file.
+
+## Documentation
+
+`function fit(array $row)`
+
+Where `$row` is array of cells in current parsing line.
+
+`$result` of method must be `TRUE` or `array` of cell(column) numbers where is error detected.
+
+## Configuration
+
+`isHeader` - 0 | 1. If enabled then first row from CSV file is header, otherwise there is no header.
+`ignoreEmpty` - 0 | 1. If enabled then empty rows will be ignored, otherwise will be marked as errors.
+`encoding` - File encoding.
+`length` - Maximum length of line in Bytes.
+`delimeter` - Field delimeter.
+`enclosure` - Enclosure character.
+`escape` - Escape character.
 
 ## Example
 
